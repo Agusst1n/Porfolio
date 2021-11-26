@@ -107,50 +107,16 @@
         </div>
     </div>
     <div class="Contacto">
-        <h1 class="text-left">Contactame</h1>
-            <div class="contacto-contain">
-                <form method="post" action="https://formsubmit.co/agustingodoy207@gmail.com">
-                    <input type="hidden" name="_subject" value="Nuevo mensaje">
-                    <ul class="contact-form">
-                        <li>
-                            <div class="nick">
-                                <input name="nombre" placeholder="Escribe tu nombre" required="required" size="8" type="text" />
-                            </div>
-
-                            <div class="email">
-                                <input type="email" name="email" placeholder="Email">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="asunto">
-                                <input name="asunto" placeholder="Asunto" required="required" size="8" type="text" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="message">
-                                <textarea class="span12" name="mensaje" placeholder="Escribe tu  mensaje" required="required"></textarea>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="submit">
-                                <div class="cv-img">
-                                    <a href="./CV.pdf"><img src="./images/curriculum-vitae.png" alt="" class="img-cv"></a>
-                                    <p>Descargar mi CV</p>
-                                </div>
-                                
-                                <button type="submit">
-                    Enviar mensaje
-                    <span
-                      class="glyphicon glyphicon-arrow-right"
-                      aria-hidden="true"
-                    ></span>
-                  </button>
-                            </div>
-                        </li>
-                    </ul>
-                </form>
-            </div>
+        <h1>Contactame</h1>
+        <div class="formulario">
+            <form action="https://formsubmit.co/agustingodoy207@gmail.com" method="POST" class="form">
+                <input type="hidden" name="_subject" value="Nuevo Mensaje">
+                <input type="text" placeholder="Nombre" class="name" required>
+                <input type="email" name="email" placeholder="Email Address">
+                <textarea name="asunto" placeholder="Asunto" class="asunto" required></textarea>
+                <button type="submit" value="Enviar" class="enviar_btn">Enviar</button>
+            </form>
+        </div>
     </div>
  
     <!-- SCRIPTS -->

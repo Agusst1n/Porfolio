@@ -14,6 +14,9 @@
     --back: #fff; /*AFECTA AL TEXTO, EN MODO OSCURO ES BLANCO Y EN MODO CLARO OSCURO*/
     --white: rgb(0, 0, 0); /*LAS LETRAS BLANCAS SE VUELVEN NEGRAS Y LAS NEGRAS BLANCAS*/
 }
+/* body{
+    background: #000;
+} */
 header{
     position: absolute;
     display: flex;
@@ -407,114 +410,59 @@ p{
 /*=====================*/
 /*      CONTACTO       */
 /*=====================*/
-.text-left{
-    color: var(--back);
-    padding-left: 10px;
-}
-.nick, .email, .asunto, .message{
-    width: 98%;
-    padding-left: 10px;
-}
 .Contacto{
     background-color: var(--white);
-    width: 100%;
+    height: 250px;
+    /* border: solid 1px red; */
 }
-.contact-form {
-    list-style-type: none;
-}
-
-.contact-form li div {
-    margin-bottom: 2.5em;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
-    width: 100%;
-    margin: 0;
-    padding-bottom: 1.4em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
-    border-bottom: 3px solid slategrey;
-    background: var(--white)    ;
-    font-family: 'Roboto', sans-serif;
-    color: lightgrey;
-    font-weight: 700;
-    font-size: 18px;
-    transition: ease-in-out 0.25s;
-}
-
-.contact-form textarea {
-    min-height: 50px;
-    max-height: 500px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    resize: vertical;
-    overflow: hidden;
-}
-
-.contact-form ::-webkit-input-placeholder {
-    font-size: 12px;
-    color: slategrey;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-.contact-form label {
-    font-size: 12px;
-    color: slategrey;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus,
-.contact-form button:focus {
-    outline: none;
-    resize: none;
-    border-bottom: 3px solid #db4d57;
-}
-
-.contact-form button {
+.Contacto h1{
     color: var(--back);
-    background: rgba(34, 34, 34, 0.0);
-    border: 3px solid #db4d57;
-    height: 64px;
-    width: 180px;
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: ease-in-out 0.25s;
 }
-.submit{
+
+.formulario{
     display: flex;
-    justify-content: flex-end;
-    padding-right: 2%;
-}
-
-.contact-form button span {
-    transition: ease-in-out 0.25s;
-}
-
-.contact-form button:hover {
-    background: #db4d57;
-    color: lightgrey;
-}
-
-.contact-form button:hover span {
+    flex-direction: column;
+    /* border: solid 1px blue; */
+    height: 200px;
     padding-left: 10px;
-    color: white;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
+.form input, .asunto{
+    width: 60%;
+}
+.form .enviar_btn{
+    width: 70px;
+    padding: 0;
+    color: var(--back);
+    background-color: #0e8178 ;
+    border-radius: 40px;
+    padding: 3px 5px;
+    border: transparent;
+}
+.form .enviar_btn:hover{
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform: translateY(-5%);
+    box-shadow: 0px 3px 5px black;
+    transition: 0.5s;
+}
+.form input, textarea, select{
+    background-color: var(--white);
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: solid 2px var(--back);
 }
 /*=====================*/
 /*         CV          */
 /*=====================*/
-.cv-img{
+/* .cv-img{
     margin-right: 65%;
     width: auto;
 }
@@ -522,7 +470,7 @@ p{
     transform: translateY(-5%);
     box-shadow: 0 2px 5px black;
     transition: 0.5s;
-}
+} */
 /*=====================*/
 /*=====================*/
 /*=======MEDIAS========*/
@@ -567,7 +515,7 @@ p{
     }
     .miParrafo{
         font-size: 15px;
-        width: 90%;
+        width: 100%;
     }
     .subtitle-2{
         width: 60%;
@@ -578,7 +526,7 @@ p{
         flex-wrap: wrap;
     }
     .sobreMi{
-        width: 80%;
+        width: 100%;
         left: 10%;
     }
     .habilidades{
