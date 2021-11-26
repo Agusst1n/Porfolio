@@ -511,7 +511,19 @@ p{
     padding-left: 10px;
     color: white;
 }
-
+/*=====================*/
+/*         CV          */
+/*=====================*/
+.cv-img{
+    margin-right: 65%;
+    width: auto;
+}
+.cv-img .img-cv:hover{
+    transform: translateY(-5%);
+    box-shadow: 0 2px 5px black;
+    transition: 0.5s;
+}
+/*=====================*/
 /*=====================*/
 /*=======MEDIAS========*/
 /*=====================*/
