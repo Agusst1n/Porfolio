@@ -292,14 +292,6 @@ p{
     color: var(--white);
     text-shadow: 0px 2px 2px rgba(150, 150, 150, 0.84);
 }
-/* .card .cover{
-    position: relative;
-    background-color: violet;  /*HAY QUE COLOCAR UN Z INDEX 
-    border: solid 1px red;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-} */
 .separacion{
     height: 200px;
     width: 100%;
@@ -365,42 +357,39 @@ p{
     color: var(--white);
     border: solid 1px var(--white);
 }
-.skills{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: var(--back);
+
+.subtitle-2{
     background-color: var(--white);
-    height: 400px;
+    color: var(--back);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 10px;
+    width: 20%;
 }
 .sobreMi{
-    position: absolute;
-    /* border: solid 1px red; */
-    width: 50%;
-    left: 5%;
-    color: black;
+    height: auto;
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
 }
-.habilidades{
-    position: absolute;
-    right: 5%;
-    /* border: solid 1px red; */
-    padding: 20px 10px;
+.miParrafo{
+    width: 80%;
+    padding-left: 10px;
 }
-.habilidades img{
-    margin: 0px 10px;
+.miParrafo::first-letter{
+    font-weight: 700;
 }
-.habilidades img:hover{
-    transform: translateY(-5%);
+.skills-images{
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+    background-color: var(--white);
+}
+.skills-images .skill:hover{
+    transform: rotate(5deg);
     cursor: pointer;
     transition: 0.5s;
-}
-.Mih2{
-    color: var(--back);
-}
-.MiParrafo{
-    font-size: 20px;
 }
 #carouselExampleControls{
     margin-top: 200px;
@@ -411,8 +400,118 @@ p{
     color: var(--back);
     text-transform: uppercase;
     font-weight: 700;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+    padding: 70px 0;
 }
+
+/*=====================*/
+/*      CONTACTO       */
+/*=====================*/
+.text-left{
+    color: var(--back);
+    padding-left: 10px;
+}
+.nick, .email, .asunto, .message{
+    width: 98%;
+    padding-left: 10px;
+}
+.Contacto{
+    background-color: var(--white);
+    width: 100%;
+}
+.contact-form {
+    list-style-type: none;
+}
+
+.contact-form li div {
+    margin-bottom: 2.5em;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 1.4em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 3px solid slategrey;
+    background: var(--white)    ;
+    font-family: 'Roboto', sans-serif;
+    color: lightgrey;
+    font-weight: 700;
+    font-size: 18px;
+    transition: ease-in-out 0.25s;
+}
+
+.contact-form textarea {
+    min-height: 50px;
+    max-height: 500px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    resize: vertical;
+    overflow: hidden;
+}
+
+.contact-form ::-webkit-input-placeholder {
+    font-size: 12px;
+    color: slategrey;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.contact-form label {
+    font-size: 12px;
+    color: slategrey;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+    outline: none;
+    resize: none;
+    border-bottom: 3px solid #db4d57;
+}
+
+.contact-form button {
+    color: var(--back);
+    background: rgba(34, 34, 34, 0.0);
+    border: 3px solid #db4d57;
+    height: 64px;
+    width: 180px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: ease-in-out 0.25s;
+}
+.submit{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+}
+
+.contact-form button span {
+    transition: ease-in-out 0.25s;
+}
+
+.contact-form button:hover {
+    background: #db4d57;
+    color: lightgrey;
+}
+
+.contact-form button:hover span {
+    padding-left: 10px;
+    color: white;
+}
+
 /*=====================*/
 /*=======MEDIAS========*/
 /*=====================*/
@@ -432,6 +531,10 @@ p{
     .contain{
         flex-direction: column;
     }
+    .subtitle-2{
+        width: 60%;
+    }
+
 }
 @media(max-width: 315px){
     .contain .card{
@@ -450,11 +553,18 @@ p{
     .separacion-2{
         height: 130px;
     }
-    .MiParrafo{
+    .miParrafo{
         font-size: 15px;
+        width: 90%;
+    }
+    .subtitle-2{
+        width: 60%;
     }
 }
 @media (max-width: 915px){
+    .contain{
+        flex-wrap: wrap;
+    }
     .sobreMi{
         width: 80%;
         left: 10%;

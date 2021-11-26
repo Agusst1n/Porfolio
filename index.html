@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./images/icon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto+Mono:ital@1&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <title>Porfolio</title>
 </head>
 
@@ -90,30 +91,71 @@
                 </div>
         </div>
     </div>
-    <div class="separacion-2">
-        <h2 class="subtitle" >skills</h2>
+    <div class="sobreMi">
+        <h2 class="subtitle-2" >Sobre mí</h2>
+        <p class="miParrafo">Desde chico siempre sentí atracción por la tecnología pero no sabia que se podía trabajar de esto y cuando lo supe no sabia que elegir, hasta el día que conocí el desarrollo web, es algo que me gusta mucho. Siempre trato de tener un constate aprendizaje, cuando no entiendo algo lo busco y trato de aprenderlo lo antes posible.</p>
     </div>
-    <div  id="skills" class="skills">
-      <div class="sobreMi">
-          <h2 class="Mih2">Sobre mí</h2>
-          <p class="MiParrafo">Me llamó Agustín y soy un apasionado por el desarrollo web</p>
-      </div>
-      <div class="habilidades">
-          <img class="imgSkill" src="./images/css-3.png" alt="">
-          <img class="imgSkill"  src="./images/html-5.png" alt="">
-          <img class="imgSkill"  src="./images/js-file.png" alt="">
-          <img class="imgSkill"  src="./images/bootstrap.png" alt="">
-      </div>
+    <div class="skills">
+        <div class="subtitle">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-images">
+            <img src="./images/html-5.png" alt="" class="skill one">
+            <img src="./images/css-3.png" alt="" class="skill two">
+            <img src="./images/js-file.png" alt="" class="skill three">
+            <img src="./images/bootstrap.png" alt="" class="skill four">
+        </div>
     </div>
-    
+    <div class="Contacto">
+        <h1 class="text-left">Contactame</h1>
+            <div class="contacto-contain">
+                <form method="post" action="https://formsubmit.co/agustingodoy207@gmail.com">
+                    <input type="hidden" name="_subject" value="Nuevo mensaje">
+                    <ul class="contact-form">
+                        <li>
+                            <div class="nick">
+                                <input name="nombre" placeholder="Escribe tu nombre" required="required" size="8" type="text" />
+                            </div>
+
+                            <div class="email">
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="asunto">
+                                <input name="asunto" placeholder="Asunto" required="required" size="8" type="text" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="message">
+                                <textarea class="span12" name="mensaje" placeholder="Escribe tu  mensaje" required="required"></textarea>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="submit">
+                                <button type="submit">
+                    Enviar mensaje
+                    <span
+                      class="glyphicon glyphicon-arrow-right"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+    </div>
+ 
     <!-- SCRIPTS -->
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./app.js"></script>
     <!-- Script Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
