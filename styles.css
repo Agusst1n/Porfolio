@@ -217,23 +217,6 @@ header .logo{
     color: var(--back);
     top: 90%;
 }
-/* .sci{
-    position: absolute;
-    right: 100px;
-    bottom: 40px;
-    z-index: 4;
-    display: flex;
-    flex-direction: column;
-}
-.sci li{
-    list-style: none;
-}
-.sci li a{
-    text-decoration: none;
-    color: var(--back);
-    font-size: 1.75em;
-} */
-
 
 /*=====================*/
 /*=======CARDS=========*/
@@ -441,22 +424,25 @@ p{
 }
 .form input, .asunto{
     width: 60%;
+    color: var(--back);
+    font-size: 15px;
 }
 .form .enviar_btn{
     width: 70px;
     padding: 0;
-    color: var(--back);
+    color: var(--white);
     background-color: #0e8178 ;
     border-radius: 40px;
     padding: 3px 5px;
     border: transparent;
+    box-shadow: 0px 3px 5px black;
 }
 .form .enviar_btn:hover{
     background: #11998e;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transform: translateY(-5%);
-    box-shadow: 0px 3px 5px black;
+    transform: translateY(5%);
+    box-shadow: none;
     transition: 0.5s;
 }
 .form input, textarea, select{
@@ -471,21 +457,84 @@ p{
 /*=====================*/
 .cv-btn{
     width: 150px;
-    color: var(--back);
+    color: var(--white);
     background-color: #0e8178 ;
     border-radius: 40px;
     padding: 10px 10px;
     border: transparent;
     text-decoration: none;
+    box-shadow: 0px 3px 5px black;
 }
 .cv-btn:hover{
     background: #11998e;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transform: translateY(-5%);
-    box-shadow: 0px 3px 5px black;
+    transform: translateY(5%);
     transition: 0.5s;
+    box-shadow: none;
 }
+
+/*=====================*/
+/*   SECCION GRACIAS   */
+/*=====================*/
+
+.main-thx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+}
+.parrafo-thx{
+    font-family: "consolas", sans-serif;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.568);
+}
+.loader{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, transparent 40%, #0e8178);
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loader::before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-color: #111;
+    border-radius: 50%;
+    z-index: 1000;
+}
+.loader::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(45deg, transparent, transparent 40%, #0e8178);
+    border-radius: 50%;
+    z-index: 1;
+    filter: blur(30px);
+}
+
+
 /*=====================*/
 /*=====================*/
 /*=======MEDIAS========*/
