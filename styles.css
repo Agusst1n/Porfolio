@@ -14,9 +14,9 @@
     --back: #fff; /*AFECTA AL TEXTO, EN MODO OSCURO ES BLANCO Y EN MODO CLARO OSCURO*/
     --white: rgb(0, 0, 0); /*LAS LETRAS BLANCAS SE VUELVEN NEGRAS Y LAS NEGRAS BLANCAS*/
 }
-/* body{
+body{
     background: #000;
-} */
+}
 header{
     position: absolute;
     display: flex;
@@ -265,6 +265,11 @@ header .logo{
     width: 200px;
     z-index: 2;
 }
+.img-bici{
+    width: 250px;
+    height: 200px;
+    z-index: 2;
+}
 .product{
     z-index: 2;
     margin: 10px 0;
@@ -375,6 +380,7 @@ p{
     background-color: var(--white);
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
 }
 .miParrafo{
     width: 80%;
@@ -414,6 +420,7 @@ p{
     background-color: var(--white);
     height: 250px;
     /* border: solid 1px red; */
+    padding-left: 10px;
 }
 .Contacto h1{
     color: var(--back);
@@ -462,15 +469,23 @@ p{
 /*=====================*/
 /*         CV          */
 /*=====================*/
-/* .cv-img{
-    margin-right: 65%;
-    width: auto;
+.cv-btn{
+    width: 150px;
+    color: var(--back);
+    background-color: #0e8178 ;
+    border-radius: 40px;
+    padding: 10px 10px;
+    border: transparent;
+    text-decoration: none;
 }
-.cv-img .img-cv:hover{
+.cv-btn:hover{
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transform: translateY(-5%);
-    box-shadow: 0 2px 5px black;
+    box-shadow: 0px 3px 5px black;
     transition: 0.5s;
-} */
+}
 /*=====================*/
 /*=====================*/
 /*=======MEDIAS========*/
