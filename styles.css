@@ -493,6 +493,11 @@ p{
     font-size: 1.5em;
     color: rgba(255, 255, 255, 0.568);
 }
+@media (max-width:514px){
+    .parrafo-thx{
+        text-align: center;
+    }
+}
 .loader{
     position: relative;
     width: 150px;
