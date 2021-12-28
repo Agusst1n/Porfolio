@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 :root{
     --back: #333;
@@ -109,10 +109,10 @@ header .logo{
     backdrop-filter: blur(5px);
 }
 .navigation{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -121,6 +121,7 @@ header .logo{
     background: var(--white);
     z-index: 4;
     transition: 0.5s;
+    border-right: solid 1px var(--back);
 }
 .navigation.active{
     left: 0;
@@ -381,7 +382,7 @@ p{
     background-color: var(--white);
 }
 .skills-images .skill:hover{
-    transform: rotate(5deg);
+    transform: rotate(360deg);
     cursor: pointer;
     transition: 0.5s;
 }
@@ -624,6 +625,10 @@ p{
     }
     .cv-btn{
         margin-left: 17%;
+    }
+    .skill{
+        width: 50px;
+        height: 50px;
     }
 }
 @media (max-width:320px){
