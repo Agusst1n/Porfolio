@@ -74,6 +74,7 @@ header .logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--white);
 }
 .main video{
     position: absolute;
@@ -215,7 +216,7 @@ header .logo{
     font-weight: 500;
     font-size: 1.2em;
     color: var(--back);
-    top: 90%;
+    top: 87%;
 }
 
 /*=====================*/
@@ -235,22 +236,23 @@ header .logo{
 }
 .card{
     position: relative;
-    width: 300px;
-    height: 500px;
+    width: 230px;
+    height:340px;
     background-color: var(--back);
     margin: 90px auto;
     overflow: hidden;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0,2);
+    /* border: solid 1px red; */
     /* border-radius: 10px; */
 }
 .img{
-    height: 200px; 
-    width: 200px;
+    height: 140px; 
+    width: 140px;
     z-index: 2;
 }
 .img-bici{
-    width: 250px;
-    height: 200px;
+    width: 180px;
+    height: 140px;
     z-index: 2;
 }
 .product{
@@ -263,7 +265,7 @@ header .logo{
     z-index: 2;
     border: solid 1px var(--white);
     width: 90%;
-    font-size: 1.2em;
+    font-size: 0.8em;
     display: none;
     position: relative;
     background-color: var(--white);
@@ -279,7 +281,7 @@ p{
 }
  a{
     z-index: 2;
-    margin: 5px 0;
+    margin: 3px 0;
     color: var(--white);
     text-shadow: 0px 2px 2px rgba(150, 150, 150, 0.84);
 }
@@ -354,7 +356,7 @@ p{
     color: var(--back);
     text-transform: uppercase;
     font-weight: 700;
-    padding-left: 10px;
+    padding-left: 15px;
     width: 20%;
 }
 .sobreMi{
@@ -367,7 +369,7 @@ p{
 }
 .miParrafo{
     width: 80%;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .miParrafo::first-letter{
     font-weight: 700;
@@ -450,7 +452,8 @@ p{
     border-top: transparent;
     border-right: transparent;
     border-left: transparent;
-    border-bottom: solid 2px var(--back);
+    border-bottom: solid 2px #11998e;
+    outline: none;
 }
 /*=====================*/
 /*         CV          */
@@ -464,7 +467,7 @@ p{
     border: transparent;
     text-decoration: none;
     box-shadow: 0px 3px 5px black;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .cv-btn:hover{
     background: #11998e;  /* fallback for old browsers */
@@ -605,5 +608,37 @@ p{
         width: 80%;
         display: flex;
         justify-content: center;
+    }
+}
+@media (max-width:414px){
+    .subtitle-2, .miParrafo{
+        padding-left: 20%;
+    }
+    .cv-btn{
+        margin-left: 20%;
+    }
+}
+@media (max-width:375px){
+    .subtitle-2, .miParrafo{
+        padding-left: 17%;
+    }
+    .cv-btn{
+        margin-left: 17%;
+    }
+}
+@media (max-width:320px){
+    .subtitle-2, .miParrafo{
+        padding-left: 10%;
+    }
+    .cv-btn{
+        margin-left: 10%;
+    }
+}
+@media (max-width:280px){
+    .subtitle-2, .miParrafo{
+        padding-left: 15px;
+    }
+    .cv-btn{
+        margin-left: 15px;
     }
 }
