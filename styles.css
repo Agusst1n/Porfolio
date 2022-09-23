@@ -252,8 +252,7 @@ header .logo{
     z-index: 2;
 }
 .img-bici{
-    width: 180px;
-    height: 140px;
+    height: 110px;
     z-index: 2;
 }
 .product{
@@ -378,6 +377,7 @@ p{
 .skills-images{
     display: flex;
     justify-content: center;
+    gap: 5px;
     padding: 70px 0;
     background-color: var(--white);
 }
